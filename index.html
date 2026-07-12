@@ -1,128 +1,141 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajesh Dheeraj Varma Godavarthi — AI/ML Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Dheeraj Varma Godavarthi — AI/ML Portfolio</title>
   <style>
-    :root{
-      --navy:#1f3864; --accent:#2e5496; --ink:#1f2430; --muted:#5b6472;
-    --bg:#ffffff; --soft:#f4f7fb; --line:#e2e8f2; --chip:#eaf1fb;
+      :root{
+            --navy:#1f3864; --accent:#2e5496; --ink:#1f2430; --muted:#5b6472;
+            --bg:#ffffff; --soft:#f4f7fb; --line:#e2e8f2; --chip:#eaf1fb;
       }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent);text-decoration:none}
-  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
-  header{background:linear-gradient(135deg,#1f3864 0%,#2e5496 100%);color:#fff;padding:64px 0 56px}
-    header .wrap{display:flex;flex-direction:column;gap:10px}
-  .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#cadcfc;font-weight:600}
-    h1{font-size:40px;line-height:1.15;font-weight:800}
-  .subtitle{font-size:19px;color:#dbe6fb;max-width:640px}
-    .links{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
-  .btn{display:inline-block;padding:11px 18px;border-radius:9px;font-weight:600;font-size:15px}
-  .btn-primary{background:#ffd43b;color:#20304f}
+      *{box-sizing:border-box;margin:0;padding:0}
+      html{scroll-behavior:smooth}
+      body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                  color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+      a{color:var(--accent);text-decoration:none}
+      .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+      header{background:linear-gradient(135deg,#1f3864 0%,#2e5496 100%);color:#fff;padding:64px 0 56px}
+      header .wrap{display:flex;flex-direction:column;gap:10px}
+      .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#cadcfc;font-weight:600}
+      h1{font-size:40px;line-height:1.15;font-weight:800}
+      .subtitle{font-size:19px;color:#dbe6fb;max-width:640px}
+      .links{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
+      .btn{display:inline-block;padding:11px 18px;border-radius:9px;font-weight:600;font-size:15px}
+      .btn-primary{background:#ffd43b;color:#20304f}
       .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
-    nav.top{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);
-          border-bottom:1px solid var(--line);z-index:10}
-  nav.top .wrap{display:flex;gap:24px;padding:14px 24px;font-weight:600;font-size:15px}
-  nav.top a{color:var(--muted)} nav.top a:hover{color:var(--accent)}
+      nav.top{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);
+                        border-bottom:1px solid var(--line);z-index:10}
+      nav.top .wrap{display:flex;gap:24px;padding:14px 24px;font-weight:600;font-size:15px}
+      nav.top a{color:var(--muted)} nav.top a:hover{color:var(--accent)}
       section{padding:52px 0}
-  section:nth-child(even){background:var(--soft)}
-  h2{font-size:26px;color:var(--navy);font-weight:800;margin-bottom:8px}
-  .lead{color:var(--muted);font-size:15px;margin-bottom:22px}
+      section:nth-child(even){background:var(--soft)}
+      h2{font-size:26px;color:var(--navy);font-weight:800;margin-bottom:8px}
+      .lead{color:var(--muted);font-size:15px;margin-bottom:22px}
       p.body{font-size:17px;margin-bottom:16px;max-width:760px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;
-            box-shadow:0 10px 30px rgba(31,56,100,.07)}
-  .card h3{font-size:22px;color:var(--navy);margin-bottom:6px}
-  .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
-  .tag{background:var(--chip);color:var(--accent);font-weight:600;font-size:13px;padding:5px 11px;border-radius:999px}
-  .grid{display:grid;grid-template-columns:150px 1fr;gap:10px 20px;margin:6px 0 22px}
-  .grid dt{font-weight:700;color:var(--navy)}
-  .grid dd{color:var(--ink)}
-  .cardlinks{display:flex;flex-wrap:wrap;gap:12px}
-  .btn-solid{background:var(--accent);color:#fff}
-    .btn-outline{background:#fff;color:var(--accent);border:1px solid var(--accent)}
-        .evidence{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}
-  .evidence h4{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
-  .evidence ul{margin-left:20px} .evidence li{margin-bottom:6px}
+      .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:0 10px 30px rgba(31,56,100,.07)}
+      .card h3{font-size:22px;color:var(--navy);margin-bottom:6px}
+      .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
+      .tag{background:var(--chip);color:var(--accent);font-weight:600;font-size:13px;padding:5px 11px;border-radius:999px}
+      .grid{display:grid;grid-template-columns:150px 1fr;gap:10px 20px;margin:6px 0 22px}
+      .grid dt{font-weight:700;color:var(--navy)}
+      .grid dd{color:var(--ink)}
+      .cardlinks{display:flex;flex-wrap:wrap;gap:12px}
+      .btn-solid{background:var(--accent);color:#fff}
+      .btn-outline{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+      .evidence{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}
+      .evidence h4{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+      .evidence ul{margin-left:20px} .evidence li{margin-bottom:6px}
+      .demo{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}
+      .demo h4{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+      .demo iframe{width:100%;height:520px;border:1px solid var(--line);border-radius:12px}
       footer{background:var(--navy);color:#c9d6ef;padding:30px 0;font-size:14px;text-align:center}
-    @media(max-width:620px){h1{font-size:31px}.grid{grid-template-columns:1fr}.grid dt{margin-top:8px}}
-</style>
-</head>
+      @media(max-width:620px){h1{font-size:31px}.grid{grid-template-columns:1fr}.grid dt{margin-top:8px}}
+    </style>
+  </head>
   <body>
-  <header>
-  <div class="wrap">
-      <span class="eyebrow">Professional Portfolio</span>
-      <h1>Rajesh Dheeraj Varma Godavarthi</h1>
-      <p class="subtitle">Artificial Intelligence &amp; Machine Learning — building capable, responsible AI and explaining it in plain language.</p>
-    <div class="links">
-      <a class="btn btn-primary" href="#artifact">View Artifact 1 &rarr;</a>
-        <a class="btn btn-ghost" href="https://www.chatbase.co/1q-50NQIIiZeaYPcwEFfj/help" target="_blank" rel="noopener">Try my AI assistant</a>
-    </div>
-  </div>
-</header>
-<nav class="top">
-  <div class="wrap">
-    <a href="#about">About</a>
-    <a href="#value">Value Proposition</a>
-      <a href="#artifact">Artifact 1</a>
-    </div>
-  </nav>
-<section id="about">
-  <div class="wrap">
-      <h2>About Me</h2>
-      <p class="lead">Professional bio</p>
-      <p class="body">I am a graduate student in Machine Learning Fundamentals at Indiana Wesleyan University, developing practical, hands-on skills in artificial intelligence and machine learning. I enjoy turning ideas into working tools — from configuring Python and Jupyter development environments to designing and deploying AI assistants.</p>
-    <p class="body">My focus is on building AI that is not only capable but also responsible: systems that stay within scope, communicate clearly, and know their limits. This portfolio documents my growth as an emerging AI/ML professional and the real work I can produce.</p>
-  </div>
-</section>
+    <header>
+        <div class="wrap">
+              <span class="eyebrow">Professional Portfolio</span>span>
+              <h1>Rajesh Dheeraj Varma Godavarthi</h1>
+            <p class="subtitle">Artificial Intelligence &amp; Machine Learning — building capable, responsible AI and explaining it in plain language.</p>p>
+            <div class="links">
+                  <a class="btn btn-primary" href="#artifact">View Artifact 1 &rarr;</a>a>
+                  <a class="btn btn-ghost" href="https://www.chatbase.co/1q-50NQIIiZeaYPcwEFfj/help" target="_blank" rel="noopener">Try my AI assistant</a>a>
+            </div>div>
+        </div>div>
+    </header>
+  <nav class="top">
+    <div class="wrap">
+        <a href="#about">About</a>a>
+        <a href="#value">Value Proposition</a>a>
+        <a href="#artifact">Artifact 1</a>a>
+    </div>div>
+  </nav>nav>
+  <section id="about">
+    <div class="wrap">
+        <h2>About Me</h2>
+        <p class="lead">Professional bio</p>p>
+        <p class="body">I am a graduate student in Machine Learning Fundamentals at Indiana Wesleyan University, developing practical, hands-on skills in artificial intelligence and machine learning. I enjoy turning ideas into working tools — from configuring Python and Jupyter development environments to designing and deploying AI assistants.</p>p>
+        <p class="body">My focus is on building AI that is not only capable but also responsible: systems that stay within scope, communicate clearly, and know their limits. This portfolio documents my growth as an emerging AI/ML professional and the real work I can produce.</p>p>
+    </div>div>
+  </section>section>
   <section id="value">
     <div class="wrap">
-      <h2>My Value Proposition</h2>
-    <p class="lead">What I bring</p>
-    <p class="body">I build AI solutions that pair technical capability with practical judgment. I can take a real problem, apply design thinking, and deliver a working, well-documented product — while designing in the guardrails that make AI safe and trustworthy. I also translate complex technical work into plain language for non-technical audiences, which makes me effective both at building AI and at helping others understand and adopt it.</p>
-  </div>
-</section>
-<section id="artifact">
-  <div class="wrap">
-    <h2>Artifact 1 — AI Lab</h2>
-    <p class="lead">A live AI product I designed, tested, and deployed</p>
-      <div class="card">
-        <h3>Compliance &amp; Trade-Monitoring Assistant</h3>
-        <div class="tagrow">
-          <span class="tag">Generative AI</span>
-          <span class="tag">Chatbase</span>
-          <span class="tag">Design Thinking</span>
-          <span class="tag">Responsible AI</span>
-        </div>
-        <dl class="grid">
-          <dt>Objective</dt>
-          <dd>Design and deploy a knowledge-grounded AI assistant that helps compliance analysts and new team members understand trade-monitoring concepts in plain language — while safely refusing legal rulings, investment advice, and requests for live data.</dd>
-          <dt>Process</dt>
-          <dd>I used a design-thinking approach: identified the audience and their pain points, defined the problem, and prototyped a chatbot on Chatbase. I authored a generic, non-confidential knowledge base and a custom system prompt encoding the assistant's role, knowledge boundaries, guardrails, and response style. I then tested it with six prompts — including three deliberate "refusal" tests — and confirmed each passed before publishing it as a public page.</dd>
-          <dt>Tools</dt>
-          <dd>Chatbase (no-code AI-agent platform, GPT-based model); a large language model for drafting and refining content; Microsoft Word for the documentation.</dd>
-        <dt>Value</dt>
-        <dd>Shows I can build, test, and deploy a real AI product end-to-end — and that I design for safety, not just capability. Building an assistant that helpfully refuses out-of-scope requests demonstrates exactly the judgment employers want in AI/ML professionals.</dd>
-        </dl>
-        <div class="cardlinks">
-          <a class="btn btn-solid" href="https://www.chatbase.co/1q-50NQIIiZeaYPcwEFfj/help" target="_blank" rel="noopener">Try the live chatbot</a>
-        </div>
-        <div class="evidence">
-          <h4>Evidence &amp; testing</h4>
-          <ul>
-            <li>Live, working product (link above) — not just a description.</li>
-          <li>Full documentation: design-thinking write-up, build log (v1&rarr;v4), and a six-prompt test table (all passed, including the three refusals).</li>
-          <li>Verified guardrails: the assistant declines investment advice, live-data requests, and legal rulings, and points users to a compliance officer.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <footer>
-              <div class="wrap">© 2026 Rajesh Dheeraj Varma Godavarthi · AI/ML Professional Portfolio · Indiana Wesleyan University</div>
-            </footer>
-            </body>
-            </html>
+        <h2>My Value Proposition</h2>
+        <p class="lead">What I bring</p>p>
+        <p class="body">I build AI solutions that pair technical capability with practical judgment. I can take a real problem, apply design thinking, and deliver a working, well-documented product — while designing in the guardrails that make AI safe and trustworthy. I also translate complex technical work into plain language for non-technical audiences, which makes me effective both at building AI and at helping others understand and adopt it.</p>p>
+    </div>div>
+  </section>section>
+  <section id="artifact">
+    <div class="wrap">
+        <h2>Artifact 1 — AI Lab</h2>
+        <p class="lead">A live AI product I designed, tested, and deployed</p>p>
+        <div class="card">
+              <h3>Compliance &amp; Trade-Monitoring Assistant</h3>
+              <div class="tagrow">
+                      <span class="tag">Generative AI</span>span>
+                      <span class="tag">Chatbase</span>span>
+                      <span class="tag">Design Thinking</span>span>
+                      <span class="tag">Responsible AI</span>span>
+              </div>div>
+              <dl class="grid">
+                      <dt>Objective</dt>
+                      <dd>Design and deploy a knowledge-grounded AI assistant that helps compliance analysts and new team members understand trade-monitoring concepts in plain language — while safely refusing legal rulings, investment advice, and requests for live data.</dd>
+                      <dt>Process</dt>
+                      <dd>I used a design-thinking approach: identified the audience and their pain points, defined the problem, and prototyped a chatbot on Chatbase. I authored a generic, non-confidential knowledge base and a custom system prompt encoding the assistant's role, knowledge boundaries, guardrails, and response style. I then tested it with six prompts — including three deliberate "refusal" tests — and confirmed each passed before publishing it as a public page.</dd>
+                      <dt>Tools</dt>
+                      <dd>Chatbase (no-code AI-agent platform, GPT-based model); a large language model for drafting and refining content; Microsoft Word for the documentation.</dd>
+                      <dt>Value</dt>
+                      <dd>Shows I can build, test, and deploy a real AI product end-to-end — and that I design for safety, not just capability. Building an assistant that helpfully refuses out-of-scope requests demonstrates exactly the judgment employers want in AI/ML professionals.</dd>
+              </dl>dl>
+              <div class="cardlinks">
+                      <a class="btn btn-solid" href="https://www.chatbase.co/1q-50NQIIiZeaYPcwEFfj/help" target="_blank" rel="noopener">Try the live chatbot</a>a>
+                      <a class="btn btn-outline" href="Godavarthi_RajeshDheerajVarma_AILab_Documentation.docx">Read the full documentation</a>a>
+              </div>div>
+              <div class="evidence">
+                      <h4>Evidence &amp; testing</h4>
+                      <ul>
+                                  <li>Live, working product (link above) — not just a description.</li>
+                                <li>Full documentation: design-thinking write-up, build log (v1&rarr;v4), and a six-prompt test table (all passed, including the three refusals).</li>
+                                <li>Verified guardrails: the assistant declines investment advice, live-data requests, and legal rulings, and points users to a compliance officer.</li>
+                      </ul>
+              </div>div>
+              <div class="demo">
+                      <h4>Live demo — try it yourself</h4>
+                      <iframe title="Compliance and Trade-Monitoring Assistant" src="https://www.chatbase.co/chatbot-iframe/1q-50NQIIiZeaYPcwEFfj"></iframe>iframe>
+              </div>div>
+        </div>div>
+    </div>div>
+  </section>section>
+  <footer>
+      <div class="wrap">© 2026 Rajesh Dheeraj Varma Godavarthi · AI/ML Professional Portfolio · Indiana Wesleyan University</div>div>
+  </footer>
+  </body>
+</html>html>
+  </footer></li></li>
+                      </ul></dd></dd></dt></h2></h1>
+    </header>
+  </body>
+  </style></title>
+  </head>
